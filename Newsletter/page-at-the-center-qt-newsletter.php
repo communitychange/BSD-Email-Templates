@@ -13,7 +13,8 @@ get_header('newsletter-dtw'); ?>
 			    background-position: center center;
 			}
 			.in-case-banner-div { background: #eee;}
-			.wrapper.style4 { background: #ccc; }
+			.wrapper.style4 { background: rgba(255,255,255,0.45);}
+			ul.features img { width: 300px;}
 		</style>
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -77,12 +78,7 @@ get_header('newsletter-dtw'); ?>
 								
 								<?php if (get_field('in_these_times_full_text')):?>
 									<p><?php the_field('in_these_times_full_text');?></p>
-								<?php endif;?>
-
-					
-								<?php if (get_field('in_these_times_author_info')):?>
-									<p><?php the_field('in_these_times_author_info');?></p>
-								<?php endif;?>
+								<?php endif;?>		
 							</header>
 						</div>
 					</section>
@@ -128,33 +124,31 @@ get_header('newsletter-dtw'); ?>
 								<h2 class="text-center">In Case You Missed It</h2>
 							</header>
 						</div>
-
-						<?php if( have_rows('spotlight') ): ?>
-						    <section class="spotlight">			 
-						    <?php while( have_rows('spotlight') ): the_row(); ?>
-								<div class="image">
-									<a href="<?php the_sub_field('spotlight_external_url'); ?>">
-										<img src="<?php the_sub_field('spotlight_img_link'); ?>" alt="" />
-									</a>
-								</div>		
-								<div class="content">
-									<h3><?php the_sub_field('spotlight_header'); ?></h3>
-									<p><?php the_sub_field('spotlight_description'); ?></p>
-								</div>
-						  
-						    <?php endwhile; ?>
-						    </section>
-						<?php endif; ?>	
+							<?php if( have_rows('spotlight') ): ?>		 
+							    	<?php while( have_rows('spotlight') ): the_row(); ?>
+									<section class="spotlight">	
+										<div class="image">
+											<a href="<?php the_sub_field('spotlight_external_url'); ?>">
+												<img src="<?php the_sub_field('spotlight_img_link'); ?>" alt="" />
+											</a>
+										</div>		
+										<div class="content">
+											<h3><?php the_sub_field('spotlight_header'); ?></h3>
+											<p><?php the_sub_field('spotlight_description'); ?></p>
+										</div>
+									</section>
+							    	<?php endwhile; ?>
+							<?php endif; ?>			
 					</section><!-- end in case you missed it -->
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Join The Movement</h2>
-								<p>Follow and support our latest organizing work.</p>
+								<h2>Celebrate 50 Years: From Protest to Power</h2>
+								<p>We’ll keep you updated on the latest events and engagement opportunities during our 50th Anniversary year.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="http://signup.communitychange.org/page/s/ia-monthly-newsletter" class="button fit special" style="background-color:#26211d;">Subscribe</a></li>
+								<li><a href="https://join.communitychange.org/page/s/50th-anniversary-sign-up" class="button fit special" style="background-color:#26211d;">Subscribe</a></li>
 								<li><a href="https://join.communitychange.org/page/contribute/donate-now-center-for-community-change" class="button fit special" style="background-color:#26211d;">Donate</a></li>
 							</ul>
 						</div>
@@ -172,7 +166,11 @@ get_header('newsletter-dtw'); ?>
 						</ul>
 						<ul>
 						<ul class="copyright">
-							<li>&copy; Copyright 2017 </li><li><a href="https://communitychange.org">Center for Community Change</a></li>
+							<li>&copy; Copyright 2017 </li><li><a href="https://communitychange.org">Center for Community Change</a>
+							</li>
+						</ul>
+						<ul class="copyright"> 
+							<li>Site by <a style="text-decoration: none;" href="https://www.linkedin.com/in/anhkimhoang/">Anh K. Hoang</a></li>
 						</ul>
 					</footer>
 
