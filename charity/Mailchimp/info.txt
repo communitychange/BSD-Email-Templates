@@ -1,0 +1,6 @@
+1. You can directly import this template into mailchimp,using steps as described in documentation.
+2. You can use drag and drop,template builder in mailchimp,edit text,upload images without touching html.
+
+LIMITATION OF THIS METHOD:You will not be able to change colors
+
+RECOMENDED METHOD:Use online template builder,change color,edit text,and download template.Now use this in mailchimp 

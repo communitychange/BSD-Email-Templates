@@ -1,0 +1,6 @@
+1. You can directly import this template into campaignmonitor,using steps as described in documetation.
+2. You can use drag and drop,template builder in campaignmonitor,edit text,upload images without touching html.
+
+LIMITATION OF THIS METHOD:You will not be able to change colors
+
+RECOMENDED METHOD:Use online template builder,change color,edit text,and download template.Now use this in campaignmonitor 
